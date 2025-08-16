@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRISTINE TATHAWADE | COMING SOON</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Navbar */
+    .navbar {
+      background: rgba(0,0,0,0.7);
+    }
+    .navbar .navbar-brand {
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link:hover {
+      color: #f8d210 !important;
+    }
+
+    /* Custom Toggler (3 dots) */
+    .custom-toggler {
+      border: none;
+      background: transparent;
+      outline: none;
+    }
+    .custom-toggler:focus {
+      box-shadow: none;
+    }
+    .custom-toggler .dot {
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      display: block;
+      margin: 4px auto;
+    }
+
+    /* Hero Banner */
+    .banner {
+  height: 100vh;
+  background: url('image 1.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  animation: zoomBg 10s ease-in-out infinite alternate;
+}
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    .banner .content {
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .banner h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: zoomText 3s ease-in-out;
+    }
+    .banner p {
+      font-size: 1.5rem;
+      margin-top: 15px;
+      font-weight: 300;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomText {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes zoomBg {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+
+    /* Responsive Text */
+    @media (max-width: 768px) {
+      .banner h1 { font-size: 2.5rem; }
+      .banner p { font-size: 1.2rem; }
+    }
+    @media (max-width: 576px) {
+      .banner h1 { font-size: 2rem; }
+      .banner p { font-size: 1rem; }
+    }
+
+    /* Contact Section */
+    #contact input, #contact textarea { border-radius: 8px; }
+    #contact button {
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    #contact button:hover {
+      background-color: #0d6efd;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">PRISTINE TATHAWADE</a>
+
+      <!-- Custom Toggler -->
+      <button class="custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Footer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section id="home" class="banner">
+    <div class="content">
+      <h1>COMING SOON</h1>
+      <p>Pristine Tathawade</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+      <form id="contactForm" class="row g-3 shadow p-4 bg-white rounded">
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="text-white text-center py-3">
+    <p class="mb-1">&copy; 2025 PRISTINE TATHAWADE. All rights reserved.</p>
+    <p class="small text-warning">This is not the official website.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Contact Form Submit Handler
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us! We will get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
