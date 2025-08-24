@@ -389,3 +389,281 @@
         padding: 20px;
       }
     }
+    /* Mobile Spacing Optimization */
+@media (max-width: 992px) {
+  /* Reduce all section padding */
+  .banner,
+  .about-section,
+  .features-section,
+  .floor-plans,
+  .contact-section,
+  .map-section {
+    padding: 60px 0 !important;
+  }
+  
+  /* Reduce space between sections */
+  section {
+    margin-bottom: 0;
+  }
+  
+  /* Adjust banner height for mobile */
+  .banner {
+    height: 70vh;
+    padding-top: 70px;
+  }
+  
+  /* Reduce feature box spacing */
+  .feature-box {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Reduce plan card spacing */
+  .plan-card {
+    margin-bottom: 20px;
+  }
+  
+  .plan-details {
+    padding: 15px;
+  }
+  
+  /* Adjust contact form */
+  .contact-form {
+    padding: 25px;
+  }
+  
+  /* Reduce map height */
+  .map-container {
+    height: 300px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+  /* Further reduce section padding */
+  .banner,
+  .about-section,
+  .features-section,
+  .floor-plans,
+  .contact-section,
+  .map-section {
+    padding: 50px 0 !important;
+  }
+  
+  /* Adjust banner */
+  .banner {
+    height: 60vh;
+  }
+  
+  .banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .banner p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Compact feature boxes */
+  .feature-box {
+    padding: 18px 12px;
+    margin-bottom: 18px;
+  }
+  
+  .feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+  
+  /* Reduce form spacing */
+  .form-control {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  /* Compact buttons */
+  .btn-primary {
+    padding: 12px 25px;
+  }
+  
+  /* Further reduce map height */
+  .map-container {
+    height: 250px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  /* Ultra-compact section padding */
+  .banner,
+  .about-section,
+  .features-section,
+  .floor-plans,
+  .contact-section,
+  .map-section {
+    padding: 40px 0 !important;
+  }
+  
+  /* Adjust banner for very small screens */
+  .banner {
+    height: 50vh;
+    padding-top: 65px;
+  }
+  
+  .banner h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .banner p {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Very compact feature boxes */
+  .feature-box {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Ultra-compact contact form */
+  .contact-form {
+    padding: 20px 15px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+  }
+  
+  /* Small buttons */
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Small map */
+  .map-container {
+    height: 200px;
+  }
+  
+  /* Reduce footer spacing */
+  footer {
+    padding: 25px 0 12px;
+  }
+}
+
+/* Specific section spacing adjustments */
+@media (max-width: 992px) {
+  /* Remove extra space between specific sections */
+  .about-section + .features-section,
+  .features-section + .floor-plans,
+  .floor-plans + .contact-section,
+  .contact-section + .map-section {
+    padding-top: 30px !important;
+  }
+  
+  /* Reduce space between navbar and first section */
+  .navbar + .banner +  .about-section + .features-section,
+  .features-section + .floor-plans,
+  .floor-plans + .contact-section,
+  .contact-section + .map-section {
+    margin-top: 0;
+  }
+}
+
+/* Utility classes for tight spacing */
+.tight-section {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.tighter-section {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.ultra-tight-section {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+/* Fix for content shifting on mobile */
+@media (max-width: 992px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Back to top button mobile adjustment */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 28px;
+  }
+}
+
+/* Modal mobile adjustments */
+@media (max-width: 576px) {
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  .modal-header, .modal-body, .modal-footer {
+    padding: 15px;
+  }
+}
+
+/* Ensure images don't cause overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  .btn, .nav-link, .plan-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-control {
+    min-height: 44px;
+  }
+}
+
+/* Prevent horizontal scrolling on mobile */
+@media (max-width: 992px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
