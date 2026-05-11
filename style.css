@@ -44,19 +44,19 @@ h1, h2, h3, h4, h5 {
     
     .navbar-brand {
       font-weight: 900;
-      color: var(--secondary-color);
+      color: var(--light-color);
       font-size: 1.2rem;
     }
     
     .nav-link {
-      color: var(--secondary-color);
+      color: var(--light-color);
       font-weight: 500;
       margin: 0 10px;
       transition: var(--transition);
     }
     
     .nav-link:hover {
-      color: var(--secondary-color);
+      color: var(--light-color);
     }
     
     .custom-toggler {
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
       display: block;
       height: 3px;
       width: 100%;
-      background-color: var(--secondary-color);
+      background-color: var(--light-color);
       border-radius: 3px;
       transition: var(--transition);
     }
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5 {
     /* Hero Section */
     .banner {
       height: 100vh;
-      background: linear-gradient(160deg, rgba(0,0,0,0.65) 0%, rgba(26,71,42,0.55) 100%), url('images/image 1.jpg') no-repeat center center/cover;
+      background:  url('images/image 1.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
