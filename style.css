@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5 {
         display: none;
       }
     }
+
     
     /* Hero Section */
     .banner {
@@ -488,7 +489,7 @@ h1, h2, h3, h4, h5 {
       }
       
       .navbar-collapse {
-        background-color: white;
+        background-color:var(--primary-color);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
